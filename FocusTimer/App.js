@@ -14,6 +14,7 @@ import { Focus } from './src/features/Focus';
 
 
 
+
 const App = () => {
   const [focusSubject, setFocusSubject] = useState(null)
   
@@ -29,6 +30,7 @@ const App = () => {
       <View styel={styles.container}>
         {focusSubject ? (<Text>Timer goes here</Text>) : (<Focus />)}
       </View>
+     
     </ImageBackground>
    
   )

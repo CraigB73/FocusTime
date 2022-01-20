@@ -1,40 +1,50 @@
-import { TestWatcher } from '@jest/core';
-import React from 'react';
+
+import  React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
+import { RoundedButton } from '../component/RoundedButton';
 
-//<Text style={styles.title}></Text>
 const onChange = () => {
 
 }
 export const Focus = () => {
-
+  const [text, setText] = useState("");
   return (
-    <View style={styles.container}>
-    
-      <TextInput style={styles.inputfield}
-        placeholder='What do you want to focus on:'
-       
+    <View style={styles.inputContainer}>
+      <TextInput 
+        style={styles.textInput}
+        label='What do you want to focus on:'
+        value={text}
+        onChangeText={text => setText(text)}
+        underlineColor='slategrey'
+        underlineColorAndroid='transparent'
+      />
+      <RoundedButton
+        style={styles.button}
+        title='+'
+        size={55}
+
       />
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
+  inputContainer: {
+    flexDirection: 'row',
     paddingTop: 300,
+    alignItems: 'center'
   },
-  title: {
+
+  textInput: {
+    flex: 1, 
     fontWeight: 'bold',
     fontSize: 20,
-    color: 'white'
-  }, inputfield: {
-    opacity: .9,
-    fontWeight: 'bold',
-    fontSize: 20,
-    backgroundColor: 'transparent'
-  
-    
-    
-  }
+    borderColor: 'slategrey',
+    borderWidth: 1,
+    backgroundColor: 'transparent',
+    marginRight: 5,
+    marginLeft: 5,
+  },
+
 })
