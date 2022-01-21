@@ -35,5 +35,4 @@ const styles = (size) =>
       color: '#fff',
       fontSize: size / 3,
    },
-  
   });
