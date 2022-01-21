@@ -19,7 +19,7 @@ export const Focus = ({addSubject}) => {
         onSubmitEditing={({nativeEvent}) => addSubject(nativeEvent.text)}
       />
       <RoundedButton
-        size={55}
+        size={45}
         title='+'
         onPress={() => null}
        
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     paddingTop: 300,
-    alignItems: 'center'
+    alignItems: 'center',
+    marginRight: 5
   },
 
   textInput: {
