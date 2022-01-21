@@ -7,16 +7,17 @@
  */
 
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground, Platform } from 'react-native';
 
 import { Focus } from './src/features/Focus';
+import { Timer } from './src/features/Timer';
 
 
-
+//Platform.os === 'ios' ? ios sizing : sizing
 
 
 const App = () => {
-  const [focusSubject, setFocusSubject] = useState(null)
+  const [focusSubject, setFocusSubject] = useState('Test subject')
   
   
   return (
@@ -26,7 +27,7 @@ const App = () => {
       source={require('././assets/mountains.jpg')}
       >
       <View styel={styles.container}>
-        {focusSubject ? (<Text>Timer goes here</Text>) :
+        {focusSubject ? (<Timer focusSubject={setFocusSubject} />) :
           (<Focus addSubject={setFocusSubject} />
           )}
       </View>

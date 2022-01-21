@@ -7,6 +7,7 @@ import { RoundedButton } from '../component/RoundedButton';
 
 export const Focus = ({addSubject}) => {
   const [text, setText] = useState("");
+  const [subject, setSubject] = useState(null)
   return (
     <View style={styles.inputContainer}>
       <TextInput 
@@ -16,12 +17,12 @@ export const Focus = ({addSubject}) => {
         onChangeText={text => setText(text)}
         underlineColor='transparent'
         underlineColorAndroid='transparent'
-        onSubmitEditing={({nativeEvent}) => addSubject(nativeEvent.text)}
+        onSubmitEditing={({nativeEvent}) => {setSubject(nativeEvent.text)}}
       />
       <RoundedButton
         size={45}
         title='+'
-        onPress={() => null}
+        onPress={() => addSubject(subject)}
        
       />
     </View>
@@ -29,6 +30,7 @@ export const Focus = ({addSubject}) => {
   )
 }
 const styles = StyleSheet.create({
+
   inputContainer: {
     flexDirection: 'row',
     paddingTop: 300,
