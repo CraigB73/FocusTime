@@ -12,7 +12,6 @@ target 'FocusTimer' do
     :hermes_enabled => false
   )
 
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'FocusTimerTests' do
     inherit! :complete

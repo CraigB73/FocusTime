@@ -4,10 +4,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
 import { RoundedButton } from '../component/RoundedButton';
 
-const onChange = () => {
 
-}
-export const Focus = () => {
+export const Focus = ({addSubject}) => {
   const [text, setText] = useState("");
   return (
     <View style={styles.inputContainer}>
@@ -16,19 +14,20 @@ export const Focus = () => {
         label='What do you want to focus on:'
         value={text}
         onChangeText={text => setText(text)}
-        underlineColor='slategrey'
+        underlineColor='transparent'
         underlineColorAndroid='transparent'
+        onSubmitEditing={({nativeEvent}) => addSubject(nativeEvent.text)}
       />
       <RoundedButton
-        style={styles.button}
-        title='+'
         size={55}
-
+        title='+'
+        onPress={() => null}
+       
       />
     </View>
+
   )
 }
-
 const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
@@ -40,8 +39,8 @@ const styles = StyleSheet.create({
     flex: 1, 
     fontWeight: 'bold',
     fontSize: 20,
-    borderColor: 'slategrey',
-    borderWidth: 1,
+    borderColor: 'white',
+    borderWidth: 2,
     backgroundColor: 'transparent',
     marginRight: 5,
     marginLeft: 5,

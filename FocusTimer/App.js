@@ -23,14 +23,14 @@ const App = () => {
     <ImageBackground
       style={styles.img}
       resizeMode='cover'
-      source={{
-        uri: 'https://placeimg.com/640/480/nature'
-      }}
+      source={require('././assets/mountains.jpg')}
       >
       <View styel={styles.container}>
-        {focusSubject ? (<Text>Timer goes here</Text>) : (<Focus />)}
+        {focusSubject ? (<Text>Timer goes here</Text>) :
+          (<Focus addSubject={setFocusSubject} />
+          )}
       </View>
-     
+        <Text> {focusSubject}</Text>
     </ImageBackground>
    
   )
