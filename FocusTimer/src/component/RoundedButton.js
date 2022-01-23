@@ -27,12 +27,14 @@ const styles = (size) =>
       height: size,
       alignItems: 'center',
       justifyContent: 'center',
-      borderWidth: 5,
+      borderWidth: 2,
       borderColor: '#fff',
+      margin:5
       
     },
     text: {
       color: '#fff',
       fontSize: size / 3,
+    
    },
   });

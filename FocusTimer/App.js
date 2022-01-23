@@ -17,7 +17,7 @@ import { Timer } from './src/features/Timer';
 
 
 const App = () => {
-  const [focusSubject, setFocusSubject] = useState('Test subject')
+  const [focusSubject, setFocusSubject] = useState('test focus')
   
   
   return (
@@ -27,11 +27,11 @@ const App = () => {
       source={require('././assets/mountains.jpg')}
       >
       <View styel={styles.container}>
-        {focusSubject ? (<Timer focusSubject={setFocusSubject} />) :
+        {focusSubject ? (<Timer focusSubject={focusSubject} />) :
           (<Focus addSubject={setFocusSubject} />
           )}
       </View>
-        <Text> {focusSubject}</Text>
+        
     </ImageBackground>
    
   )
