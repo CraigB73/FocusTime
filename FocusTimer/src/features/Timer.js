@@ -1,24 +1,57 @@
 import React, {useState} from "react";
-import { View, Text, StyleSheet } from 'react-native';
-import { ProgressBar } from 'react-native-paper';
+import { View, Text, StyleSheet, Vibration, Platform } from 'react-native';
 
+
+import { ProgressBar } from 'react-native-paper';
 import { Countdown } from "../component/Countdown";
 import { RoundedButton } from "../component/RoundedButton";
+import { Timing } from "./Timing";
 
+import { useKeepAwake } from '@sayem314/react-native-keep-awake';
+
+const DEFAULT_TIME = 0.2;
 
 export const Timer = ({ focusSubject }) => {
-  const [minutes, setMinutes] = useState(0.1);
+  useKeepAwake();
+
+  const [minutes, setMinutes] = useState(DEFAULT_TIME);
   const [isStarted, setIsStarted] = useState(false);
-  const [progress, setProgress] = useState(2);
+  const [progress, setProgress] = useState(1);
 
   const onProgress = (progress) => {
     setProgress(progress);
   }
+  const virbate = () => {
+    if (Platform.OS === 'ios ') {
+      const interval = setInterval(() => Vibration.vibrate(), 1000);
+      setTimeout(() => clearInterval(interval), 1000);
+    } else {
+      Vibration.vibrate(10000);
+    }
+  }
+
+  const onEnd = () => {
+    virbate();
+    setMinutes(DEFAULT_TIME);
+    setProgress(1);
+    setIsStarted(false);
+  }
+  const changeTime = (min) => {
+    setMinutes(min);
+    setProgress(1);
+    setIsStarted(false);
+    
+    }
   return (
 
     <View style={styles.container}>
       <View style={styles.countdown}>
-        <Countdown isPaused={!isStarted} onProgress={onProgress} />
+        <Countdown
+          minutes={1}
+          isPaused={!isStarted}
+          onProgress={onProgress}
+          onEnd
+        />
       </View>
       <View style={styles.focuscontainer}>
         <Text style={styles.title}>You are focuing on: </Text>
@@ -29,16 +62,18 @@ export const Timer = ({ focusSubject }) => {
         color='lightblue'
         style={{height: 20, marginTop: 10, marginBottom: 10 }}
         />
-     
-     
-      <View style={styles.time_button_wrapper}>
-        <RoundedButton title='10' size={100} />
-        <RoundedButton title='15' size={100} />
-        <RoundedButton title='15' size={100} />
+
+      <View style={styles.buttonswrapper}>
+        <Timing onChangeTime={changeTime} />
       </View>
       <View style={styles.startPauseButtonWrapper}>
-        { isStarted ? (<RoundedButton title='pause' onPress={() => setIsStarted(false)} /> ) :(
-        <RoundedButton title='start' onPress={() => setIsStarted(true)} />
+        {isStarted ? (<RoundedButton title='pause' onPress={() => {
+          setIsStarted(false)
+          
+        }} />) : (
+            <RoundedButton title='start' onPress={() => {
+              setIsStarted(true)
+            }} />
         )}
       </View>
   
@@ -69,13 +104,8 @@ const styles = StyleSheet.create({
   startPauseButtonWrapper: {
     alignItems: 'center',
   },
-  time_button_wrapper: {
-  
+  buttonswrapper: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginRight: 10,
-    marginLeft: 10,
-
   }
 
 })

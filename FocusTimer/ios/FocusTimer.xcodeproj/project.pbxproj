@@ -151,12 +151,12 @@
 			sourceTree = "<group>";
 		};
 		FC164B59B10B4BE08D82632E /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
