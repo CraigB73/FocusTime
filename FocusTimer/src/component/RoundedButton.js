@@ -35,7 +35,7 @@ const styles = (size) =>
     },
     text: {
       color: '#fff',
-      fontSize: size / 3,
+      fontSize: size / 2.75,
     
    },
   });

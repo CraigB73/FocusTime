@@ -50,7 +50,6 @@ export const Countdown = ({
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{formatTime(minute)} : {formatTime(seconds)}</Text>
-
     </View>
   )
 }

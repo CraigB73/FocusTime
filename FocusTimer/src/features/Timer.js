@@ -9,9 +9,9 @@ import { Timing } from "./Timing";
 
 import { useKeepAwake } from '@sayem314/react-native-keep-awake';
 
-const DEFAULT_TIME = 0.2;
+const DEFAULT_TIME = 0.1;
 
-export const Timer = ({ focusSubject }) => {
+export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
   useKeepAwake();
 
   const [minutes, setMinutes] = useState(DEFAULT_TIME);
@@ -35,6 +35,7 @@ export const Timer = ({ focusSubject }) => {
     setMinutes(DEFAULT_TIME);
     setProgress(1);
     setIsStarted(false);
+    onTimerEnd();
   }
   const changeTime = (min) => {
     setMinutes(min);
@@ -47,10 +48,10 @@ export const Timer = ({ focusSubject }) => {
     <View style={styles.container}>
       <View style={styles.countdown}>
         <Countdown
-          minutes={1}
+          minutes={minutes}
           isPaused={!isStarted}
           onProgress={onProgress}
-          onEnd
+          onEnd={onEnd}
         />
       </View>
       <View style={styles.focuscontainer}>
@@ -59,24 +60,24 @@ export const Timer = ({ focusSubject }) => {
       </View>
       <ProgressBar
         progress={progress}
-        color='lightblue'
-        style={{height: 20, marginTop: 10, marginBottom: 10 }}
+        color='rgba(55, 180, 222, .7)'
+        style={{height: 20, marginTop: 20, marginBottom: 20 }}
         />
 
-      <View style={styles.buttonswrapper}>
+      <View style={styles.buttonsWrapper}>
         <Timing onChangeTime={changeTime} />
       </View>
       <View style={styles.startPauseButtonWrapper}>
-        {isStarted ? (<RoundedButton title='pause' onPress={() => {
-          setIsStarted(false)
-          
-        }} />) : (
-            <RoundedButton title='start' onPress={() => {
-              setIsStarted(true)
-            }} />
+        {isStarted ? (
+          <RoundedButton title='pause' onPress={() => { setIsStarted(false)
+          }} />) : (
+          <RoundedButton title='start' onPress={() => { setIsStarted(true)
+          }} />
         )}
       </View>
-  
+      <View style={styles.clearSubject}>
+        <RoundedButton title='-' size={50} onPress={() => clearSubject()} />
+      </View>
     </View>
   )
 }; 
@@ -104,8 +105,13 @@ const styles = StyleSheet.create({
   startPauseButtonWrapper: {
     alignItems: 'center',
   },
-  buttonswrapper: {
+  buttonsWrapper: {
     flexDirection: 'row',
+  },
+  clearSubject: {
+    paddingTop: 50,
+    paddingLeft: 30,
   }
+ 
 
 })
