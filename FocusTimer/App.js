@@ -25,11 +25,12 @@ const App = () => {
   const [focusHistory, setFocusHistory] = useState([]);
   
   const addFocusHistorySubjectWithState = (subject, status) => {
-    setFocusHistory([...focusHistory, {subject, status}])
-}
+    setFocusHistory([...focusHistory, { subject, status }])
+  };
+  
   const onClear = () => {
-   // things to do
- }
+    setFocusHistory([]);
+  };
   return (
     <ImageBackground
       style={styles.img}
