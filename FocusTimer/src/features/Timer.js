@@ -1,18 +1,20 @@
-import React, {useState} from "react";
+//import { useKeepAwake } from '@sayem314/react-native-keep-awake';
+import React, { useState } from "react";
 import { View, Text, StyleSheet, Vibration, Platform } from 'react-native';
-
 
 import { ProgressBar } from 'react-native-paper';
 import { Countdown } from "../component/Countdown";
 import { RoundedButton } from "../component/RoundedButton";
 import { Timing } from "./Timing";
 
-import { useKeepAwake } from '@sayem314/react-native-keep-awake';
+
 
 const DEFAULT_TIME = 0.1;
 
 export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
-  useKeepAwake();
+  // keepAwake() is not responding need some looking into for it to work.
+  //useKeepAwake();
+ 
 
   const [minutes, setMinutes] = useState(DEFAULT_TIME);
   const [isStarted, setIsStarted] = useState(false);
@@ -21,7 +23,8 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
   const onProgress = (progress) => {
     setProgress(progress);
   }
-  const virbate = () => {
+
+  const vibrate = () => {
     if (Platform.OS === 'ios ') {
       const interval = setInterval(() => Vibration.vibrate(), 1000);
       setTimeout(() => clearInterval(interval), 1000);
@@ -29,19 +32,20 @@ export const Timer = ({ focusSubject, onTimerEnd, clearSubject }) => {
       Vibration.vibrate(10000);
     }
   }
-
+ // Add sound to play when onend() runs as well vibrate !!!!
   const onEnd = () => {
-    virbate();
+    vibrate();
     setMinutes(DEFAULT_TIME);
     setProgress(1);
     setIsStarted(false);
     onTimerEnd();
+  
+    
   }
   const changeTime = (min) => {
     setMinutes(min);
     setProgress(1);
-    setIsStarted(false);
-    
+    setIsStarted(true);
     }
   return (
 

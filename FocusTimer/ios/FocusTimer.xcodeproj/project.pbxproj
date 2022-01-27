@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FocusTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FocusTimerTests.m */; };
-		0724CFA081D69274DB6C25CE /* libPods-FocusTimer-FocusTimerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EBBC7A20AA75B7DD924D49 /* libPods-FocusTimer-FocusTimerTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		27E9C327D940491AAF8EA3E5 /* libPods-FocusTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A274BD50F2DECA82900E9D60 /* libPods-FocusTimer.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B7E39346189201C734848420 /* libPods-FocusTimer-FocusTimerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9E1C7BD4544FBD13746EAC /* libPods-FocusTimer-FocusTimerTests.a */; };
+		D5CE1512A8922D4ED31C1203 /* libPods-FocusTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A378625661D2F6543020FCFA /* libPods-FocusTimer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,20 @@
 		00E356EE1AD99517003FC87E /* FocusTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FocusTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusTimerTests.m; sourceTree = "<group>"; };
-		0A73713E7F60BDA5D75CE76C /* Pods-FocusTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer.debug.xcconfig"; path = "Target Support Files/Pods-FocusTimer/Pods-FocusTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FocusTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FocusTimer/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FocusTimer/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FocusTimer/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FocusTimer/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FocusTimer/main.m; sourceTree = "<group>"; };
-		39838E141266F79F3919AC39 /* Pods-FocusTimer-FocusTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer-FocusTimerTests.debug.xcconfig"; path = "Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9E1C7BD4544FBD13746EAC /* libPods-FocusTimer-FocusTimerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FocusTimer-FocusTimerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A16808C56F7A23C19FF37D /* Pods-FocusTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer.release.xcconfig"; path = "Target Support Files/Pods-FocusTimer/Pods-FocusTimer.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FocusTimer/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		96EBBC7A20AA75B7DD924D49 /* libPods-FocusTimer-FocusTimerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FocusTimer-FocusTimerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		971AA7115737C0385B1030EE /* Pods-FocusTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer.release.xcconfig"; path = "Target Support Files/Pods-FocusTimer/Pods-FocusTimer.release.xcconfig"; sourceTree = "<group>"; };
-		A274BD50F2DECA82900E9D60 /* libPods-FocusTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FocusTimer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE2A7CAD50D9588B18511E3C /* Pods-FocusTimer-FocusTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer-FocusTimerTests.release.xcconfig"; path = "Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A378625661D2F6543020FCFA /* libPods-FocusTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FocusTimer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD040415E6C39AD245536D20 /* Pods-FocusTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer.debug.xcconfig"; path = "Target Support Files/Pods-FocusTimer/Pods-FocusTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		BCD9369F8FB8DD41462C8661 /* Pods-FocusTimer-FocusTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer-FocusTimerTests.debug.xcconfig"; path = "Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FD2FAC645366F8AAEA3C9DDB /* Pods-FocusTimer-FocusTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTimer-FocusTimerTests.release.xcconfig"; path = "Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0724CFA081D69274DB6C25CE /* libPods-FocusTimer-FocusTimerTests.a in Frameworks */,
+				B7E39346189201C734848420 /* libPods-FocusTimer-FocusTimerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E9C327D940491AAF8EA3E5 /* libPods-FocusTimer.a in Frameworks */,
+				D5CE1512A8922D4ED31C1203 /* libPods-FocusTimer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,19 +100,19 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				A274BD50F2DECA82900E9D60 /* libPods-FocusTimer.a */,
-				96EBBC7A20AA75B7DD924D49 /* libPods-FocusTimer-FocusTimerTests.a */,
+				A378625661D2F6543020FCFA /* libPods-FocusTimer.a */,
+				3D9E1C7BD4544FBD13746EAC /* libPods-FocusTimer-FocusTimerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6A12588F0F65FEA940778355 /* Pods */ = {
+		4DEC5E5ED81361D1F7D30C34 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0A73713E7F60BDA5D75CE76C /* Pods-FocusTimer.debug.xcconfig */,
-				971AA7115737C0385B1030EE /* Pods-FocusTimer.release.xcconfig */,
-				39838E141266F79F3919AC39 /* Pods-FocusTimer-FocusTimerTests.debug.xcconfig */,
-				BE2A7CAD50D9588B18511E3C /* Pods-FocusTimer-FocusTimerTests.release.xcconfig */,
+				AD040415E6C39AD245536D20 /* Pods-FocusTimer.debug.xcconfig */,
+				45A16808C56F7A23C19FF37D /* Pods-FocusTimer.release.xcconfig */,
+				BCD9369F8FB8DD41462C8661 /* Pods-FocusTimer-FocusTimerTests.debug.xcconfig */,
+				FD2FAC645366F8AAEA3C9DDB /* Pods-FocusTimer-FocusTimerTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -133,8 +133,7 @@
 				00E356EF1AD99517003FC87E /* FocusTimerTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				6A12588F0F65FEA940778355 /* Pods */,
-				FC164B59B10B4BE08D82632E /* Resources */,
+				4DEC5E5ED81361D1F7D30C34 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -150,14 +149,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC164B59B10B4BE08D82632E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			path = "";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FocusTimerTests" */;
 			buildPhases = (
-				54B891CBEA16A02174D5EC26 /* [CP] Check Pods Manifest.lock */,
+				83C0A9FBA8EEDCCD8417D8E0 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				A58BE435A98BBB14A0867CE9 /* [CP] Embed Pods Frameworks */,
-				82FEFE707328E3EBAE7F0777 /* [CP] Copy Pods Resources */,
+				6FE55F98A57515B6A589FAAF /* [CP] Embed Pods Frameworks */,
+				D96EE2F64961239C9181D4CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FocusTimer" */;
 			buildPhases = (
-				34E9DB0751D36A2A041EEF06 /* [CP] Check Pods Manifest.lock */,
+				0B5EA7C0C1BD99437ADED837 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				A1C353D3CD2B0A0786DD0172 /* [CP] Embed Pods Frameworks */,
-				DD78BA17FE1CFD1D39DC5FBA /* [CP] Copy Pods Resources */,
+				7954944BD1619F16A81EB74A /* [CP] Embed Pods Frameworks */,
+				0E9AC6A988E3557E1B8FA154 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,7 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		34E9DB0751D36A2A041EEF06 /* [CP] Check Pods Manifest.lock */ = {
+		0B5EA7C0C1BD99437ADED837 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,7 +287,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		54B891CBEA16A02174D5EC26 /* [CP] Check Pods Manifest.lock */ = {
+		0E9AC6A988E3557E1B8FA154 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE55F98A57515B6A589FAAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7954944BD1619F16A81EB74A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C0A9FBA8EEDCCD8417D8E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,7 +360,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82FEFE707328E3EBAE7F0777 /* [CP] Copy Pods Resources */ = {
+		D96EE2F64961239C9181D4CB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,57 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A1C353D3CD2B0A0786DD0172 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A58BE435A98BBB14A0867CE9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer-FocusTimerTests/Pods-FocusTimer-FocusTimerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD78BA17FE1CFD1D39DC5FBA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTimer/Pods-FocusTimer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -438,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39838E141266F79F3919AC39 /* Pods-FocusTimer-FocusTimerTests.debug.xcconfig */;
+			baseConfigurationReference = BCD9369F8FB8DD41462C8661 /* Pods-FocusTimer-FocusTimerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -465,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2A7CAD50D9588B18511E3C /* Pods-FocusTimer-FocusTimerTests.release.xcconfig */;
+			baseConfigurationReference = FD2FAC645366F8AAEA3C9DDB /* Pods-FocusTimer-FocusTimerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -489,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A73713E7F60BDA5D75CE76C /* Pods-FocusTimer.debug.xcconfig */;
+			baseConfigurationReference = AD040415E6C39AD245536D20 /* Pods-FocusTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -515,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 971AA7115737C0385B1030EE /* Pods-FocusTimer.release.xcconfig */;
+			baseConfigurationReference = 45A16808C56F7A23C19FF37D /* Pods-FocusTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

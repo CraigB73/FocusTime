@@ -14,25 +14,34 @@ export const Countdown = ({
   onEnd
 }) => {
   const interval = useRef(null);
+  const isMounted = useRef(false);
+
 
   const [millis, setMillis] = useState(null);
 
   const countDown = () => {
+    
     setMillis((time) => {
       if (time === 0) {
         clearInterval(interval.current);
-        onEnd();
         return time;
       }
       const timeLeft = time - 1000;
-      onProgress(timeLeft / mintuesToMillis(minutes))
       return timeLeft;
     })
   }
+ 
   useEffect(() => {
     setMillis(mintuesToMillis(minutes))
   }, [minutes])
 
+  useEffect(() => {
+    onProgress(millis / mintuesToMillis(minutes));
+    if (millis === 0) {
+      onEnd();
+    }
+  }, [millis]);
+  
   useEffect(() => {
     if (isPaused) {
       if (interval.current) clearInterval(interval.current);
